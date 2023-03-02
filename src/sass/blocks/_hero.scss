@@ -18,9 +18,9 @@
         &_bg{
             position: absolute;
             z-index: -1;
-            bottom: -75px;
+            bottom: -30px;
             /* border: 2px solid #B0855B; */
-            right: -50px;
+            right: -30px;
             max-width: 580px;
             max-height: 580px;
             /* border-radius: 140px 0px; */
@@ -36,5 +36,10 @@
     }
     &__descr {
         line-height: rem(30);
+    }
+    &_btn{
+        width: rem(146.23);
+        height: rem(47.36);
+        margin-top: rem(50);
     }
 }

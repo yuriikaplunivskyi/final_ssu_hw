@@ -24,6 +24,20 @@
     font-size: rem(20);
     line-height: rem(27);
     color: $grey-text-color;
+    }
+.btn_green {
+    border-radius: 20px 0px;
+    background-color: $green-main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: rem(78);
+    color: #FFFFFF;
+    border: none;
 }
 @import 'blocks/footer';
 @import 'blocks/header';
