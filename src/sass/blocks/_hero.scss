@@ -1,0 +1,40 @@
+.hero{
+    margin-top: rem(90);
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    }
+    &__item {
+        width: rem(570);
+        position: relative;
+    }
+    &__img {
+        max-width: 570px;
+        max-height: 570px;
+        background: #C4C4C4;
+        border-radius: 140px 0px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 2px solid $green-main-color;
+        &_bg{
+            position: absolute;
+            z-index: -1;
+            bottom: -75px;
+            /* border: 2px solid #B0855B; */
+            right: -50px;
+            max-width: 580px;
+            max-height: 580px;
+            /* border-radius: 140px 0px; */
+        }
+        
+    }
+    &__title{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: rem(72);
+        line-height: rem(78);
+    }
+    &__descr {
+        line-height: rem(30);
+    }
+}

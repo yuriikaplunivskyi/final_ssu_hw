@@ -1,0 +1,100 @@
+.footer{
+    margin-top: rem(160);
+    position: relative;
+
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: rem(40);
+        background: #F8F8F8;
+    }
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: start;
+    }
+    &__company{
+        width: rem(200);
+        gap: rem(18);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 0;
+        &_logo{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-top: rem(25);
+        }
+        &_motto{  
+            margin-top: rem(15);
+            font-size: rem(12);
+        }
+    }
+    &__menu{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: rem(60);
+        &_submenu{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: start;
+        }
+    } 
+}
+
+.submenu{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 0;
+    &__title{
+        font-size: rem(20);
+        line-height: rem(40);
+        color: $black-text-color;
+    }
+    &__link{
+        text-decoration: none;
+        font-size: rem(14);
+    }
+}
+.social-network{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: rem(7);
+    &_iconlink{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem(37);
+        height: rem(37);
+        border-radius: 50%;
+        background-color: $grey-text-color;
+        &:hover {
+            background-color: $green-main-color;
+            transition: .5s;
+        }
+    }
+
+}
+hr {
+    border: 1px solid #C4C4C4;
+    margin-top: rem(69);
+}
+#rights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: rem(15);
+}
