@@ -1,0 +1,84 @@
+.about-us{
+    padding: 0 0 rem(70) 0;
+    background: url('../img/bg_dot.svg') no-repeat right top / 10%;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        gap: 120px;
+    }
+    &__item {
+        margin-top: rem(90);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__text {
+        width: 534.79px;
+    }
+    &__img {
+        max-width: 668px;
+        max-height: 711px;
+        position: relative;
+        border: 2px solid #B0855B;
+        border-radius: 140px 0px;
+        &_item {
+            max-width: 668px;
+            max-height: 711px;
+            background: $bg-grey-color;
+            border-radius: 140px 0px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border: 2px solid $green-main-color;
+            position: relative;
+            bottom: -30px;
+            right: -30px;
+            &_expire{
+                max-width: 668px;
+                max-height: 711px;
+                background: $bg-grey-color;
+                border-radius: 140px 0px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border: 2px solid $green-main-color;
+                position: relative;
+                bottom: 30px;
+                right: 30px;
+            }
+        }
+    }
+    &__title{
+        font-weight: 500;
+        font-size: rem(48);
+        line-height: rem(57);
+        &_expire{
+            font-size: 50px;
+            line-height: 65px;
+            letter-spacing: 0.04em;
+            margin-top: 0;
+        }
+    }
+    &__descr {
+        line-height: rem(30);
+    }
+    &_btn{
+        width: rem(146.23);
+        height: rem(47.36);
+        margin-top: rem(50);
+        &_expire{
+            margin-top: rem(35);
+            width: 171.7px;
+            height: 43.86px;
+        }
+    }
+}
+.bg-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    background-image: url('../img/about_us/bg_number.png');
+    background-clip: text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-stroke: 2px $green-main-color;
+    color: transparent;
+}

@@ -1,35 +1,40 @@
 .hero{
     margin-top: rem(90);
+    padding: 0 0 rem(70) 0;
+    background: url('../img/bg_dot.svg') no-repeat left bottom / 10%;
     &__wrapper{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        gap: 24px;
     }
     &__item {
-        width: rem(570);
-        position: relative;
+        position: relative;    
+    }
+    &__text {
+        width: 623.36px;
     }
     &__img {
-        max-width: 570px;
-        max-height: 570px;
-        background: #C4C4C4;
+
+        max-width: 701.28px;
+        max-height: 613.23px;
+        position: relative;
+        border: 2px solid $brown-color;
         border-radius: 140px 0px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border: 2px solid $green-main-color;
-        &_bg{
-            position: absolute;
-            z-index: -1;
-            bottom: -30px;
-            /* border: 2px solid #B0855B; */
-            right: -30px;
-            max-width: 580px;
-            max-height: 580px;
-            /* border-radius: 140px 0px; */
+        &_item {
+            max-width: 701.28px;
+            max-height: 613.23px;
+            background: #C4C4C4;
+            border-radius: 140px 0px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border: 2px solid $green-main-color;
+            position: relative;
+            bottom: 30px;
+            right: 30px;
         }
-        
     }
     &__title{
-        font-family: 'Poppins';
-        font-style: normal;
         font-weight: 600;
         font-size: rem(72);
         line-height: rem(78);

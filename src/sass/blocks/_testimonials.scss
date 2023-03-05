@@ -1,0 +1,70 @@
+.testimonials{
+    &__subtitle{
+        font-size: rem(20);
+        line-height: rem(30);
+        text-align: center;
+        margin-top: rem(130);
+    }
+    &__title{
+        font-size: rem(48);
+        line-height: rem(62);
+        text-align: center;
+        margin-top: rem(3);
+    }
+}
+.reviews{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    &__card{
+        width: 420px;
+        height: 226px;
+        background: #FFFFFF;
+        box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+        border-radius: 70px 0px; 
+        position: relative; 
+        box-sizing: border-box;
+        margin: 30px 100px;
+        &_header{
+            padding-top: 40px ;
+            padding-left: 90px;
+        }    
+        &_name{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+        }
+        &_position{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 33px;
+        }
+        &_symbol{
+            position: absolute;
+            z-index: 99;
+            top: 15px;
+            right: 15px;
+        }
+        &_descr{
+            width: 380px;
+            margin: 5px 40px 40px 90px;
+        }
+        &_photo {
+            position: absolute;
+            left: -65px;
+            top: 20%;
+            width: 130px;
+            height: 130px;
+            border-radius: 35px 0px;
+            border: 2px solid $green-main-color; 
+            object-fit: cover;         
+        }
+    }
+}

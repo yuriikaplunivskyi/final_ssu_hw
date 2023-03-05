@@ -8,9 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/slick/slick.css">
     <title>Final</title>
 </head>
 <body>
+    <div class="loader">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+        <div class="dot dot-4"></div>
+        <div class="dot dot-5"></div>
+      </div>
     <header>
         <div class="container">
             <div class="header">
@@ -30,25 +39,148 @@
             </div>
         </div>
     </header>
+
     <section class="hero">
         <div class="container">
             <div class="hero__wrapper">
                 <div class="hero__item">
-                    <h3 class="hero__subtitle subtitle_fz20">MODERN INTERIOR</h3>
-                    <h2 class="hero__title">Create Your
-                        Interior Design.</h2>
-                    <p class="hero__descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation.</p>
-                    <button class="hero_btn btn_green">CONTACT</button>
+                    <div class="hero__text">
+                        <h3 class="hero__subtitle subtitle_fz20">MODERN INTERIOR</h3>
+                        <h2 class="hero__title title">Create Your
+                            Interior Design.</h2>
+                        <p class="hero__descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation.</p>
+                        <button class="hero_btn btn_green">CONTACT</button>
+                    </div>
                 </div>
                 <div class="hero__item">
-                    <img src="img/hero_exp_dsg.png" alt="design" class="hero__img"/>
-                    <img src="img/hero_rectangle.svg" alt="bg" class="hero__img_bg">
-                </img>
+                    <div class="hero__img">
+                        <img src="img/hero_exp_dsg.png" alt="design" class="hero__img_item"/>
+                    </img>
+                    </div>
             </div>
         </div>
     </section>
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us__wrapper">
+                <div class="about-us__item">
+                    <div class="about-us__img">
+                        <img src="img/about_us/room.png" alt="design" class="about-us__img_item"/>
+                    </div>
+                </div>
+                <div class="about-us__item">
+                <div class="about-us__text">
+                    <h3 class="about-us__subtitle subtitle_fz20">ABOUT US</h3>
+                    <h2 class="about-us__title title">Interioris The Will
+                        of An Epoch Mextreo</h2>
+                    <p class="about-us__descr text_fz18">There are many variations of passages of Lorem Ipsum available,<br/>
+                        but the majority have suffered alteration in some form injected
+                        humour, or randomised words which don't look even slightly
+                        believable.If you are going to use a passage of Lorem Ipsum,
+                        sure there isn't anything embarrassing hidden the middleof text.<br/>
+                        All the Lorem Ipsum generators on the Internettend to repeat
+                        predefined chunks as necessary,making this the first true
+                        generator on the Internet.</p>
+                    <button class="about-us_btn btn_green">CONTACT</button>
+                </div>
+                </div>
+                <div class="about-us__item">
+                <div class="about-us__text">
+                    <span class="bg-text">20</span> </p>
+                    <h2 class="about-us__title_expire title">Years Of Successful Working The Market</h2>
+                    <button class="about-us_btn_expire btn_green">READ MORE</button>
+            </div>
+                </div>
+                <div class="about-us__item">
+                    <div class="about-us__img">
+                        <img src="img/about_us/wall.png" alt="design" class="about-us__img_item_expire"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="3000">
+        <div class="container">
+            <div id="canvas"></div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__wrapper">
+                <h3 class="testimonials__subtitle subtitle_fz20">TESTIMONIALS</h3>
+                <h2 class="testimonials__title title">Client says about us</h2>
+                <div class="reviews__wrapper">
+                    <div class="reviews__card">
+                        <div class="reviews__card_header">
+                            <span class="reviews__card_name title">Louis Saville
+                                <span class="reviews__card_position text_fz18"> / CEO at Google inc</span>
+                            </span>
+                            <img class="reviews__card_symbol" src="../img/testimonials/symbol.svg"  alt="symbol"/>
+                        </div>
+                        
+                        <p class="reviews__card_descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <img class="reviews__card_photo" src="../img/testimonials/reviews/man1.png" alt="customer">
+                    </div>
+                    <div class="reviews__card">
+                        <div class="reviews__card_header">
+                            <span class="reviews__card_name title">Rekha Varadwaz 
+                                <span class="reviews__card_position text_fz18"> / Manager at Nike inc</span>
+                            </span>
+                            <img class="reviews__card_symbol" src="../img/testimonials/symbol.svg"  alt="symbol"/>
+                        </div>
+                        
+                        <p class="reviews__card_descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <img class="reviews__card_photo" src="../img/testimonials/reviews/woman1.png" alt="customer">
+                    </div>
+                    <div class="reviews__card">
+                        <div class="reviews__card_header">
+                            <span class="reviews__card_name title">Louis Saville
+                                <span class="reviews__card_position text_fz18"> / CEO at Google inc</span>
+                            </span>
+                            <img class="reviews__card_symbol" src="../img/testimonials/symbol.svg"  alt="symbol"/>
+                        </div>
+                        
+                        <p class="reviews__card_descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <img class="reviews__card_photo" src="../img/testimonials/reviews/man1.png" alt="customer">
+                    </div>
+                    <div class="reviews__card">
+                        <div class="reviews__card_header">
+                            <span class="reviews__card_name title">Rekha Varadwaz 
+                                <span class="reviews__card_position text_fz18"> / Manager at Nike inc</span>
+                            </span>
+                            <img class="reviews__card_symbol" src="../img/testimonials/symbol.svg"  alt="symbol"/>
+                        </div>
+                        
+                        <p class="reviews__card_descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <img class="reviews__card_photo" src="../img/testimonials/reviews/woman1.png" alt="customer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <secrion class="news">
+        <div class="container">
+            <div class="news__wrapper">
+                <h3 class="news__subtitle subtitle_fz20">LETEST NEWS</h3>
+                <h2 class="news__title title">From Our Blog</h2>
+            </div>
+        </div>
+    </secrion>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -108,6 +240,9 @@
         </div>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
