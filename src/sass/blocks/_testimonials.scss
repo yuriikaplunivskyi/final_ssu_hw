@@ -22,7 +22,7 @@
     }
     &__card{
         width: 420px;
-        height: 226px;
+        min-height: 226px;
         background: #FFFFFF;
         box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
         border-radius: 70px 0px; 
@@ -54,7 +54,7 @@
             right: 15px;
         }
         &_descr{
-            width: 380px;
+            max-width: 380px;
             margin: 5px 40px 40px 90px;
         }
         &_photo {

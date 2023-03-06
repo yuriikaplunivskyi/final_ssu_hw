@@ -1,12 +1,11 @@
 .news{
-    background: #F8F8F8;
-    min-height: 100vh ;
-    ;
+    background: #F8F8F8 ;
+    position: relative;
     &__subtitle{
         font-size: rem(20);
         line-height: rem(28);
         text-align: center;
-        margin-top: 90px;
+        padding-top: 90px;
     }
     &__title{
         font-size: rem(48);
@@ -23,8 +22,8 @@
 }
 .news-card { 
     width: 608px;
-    height: 646.06px;
-    margin-top: 80px;
+    min-height: 646.06px;
+    margin: 80px 0 120px;
     &__img {
         max-width: 554.42px;
         max-height: 387.24px;

@@ -13,29 +13,36 @@
     <title>Final</title>
 </head>
 <body>
-    <div class="loader">
-        <div class="dot dot-1"></div>
-        <div class="dot dot-2"></div>
-        <div class="dot dot-3"></div>
-        <div class="dot dot-4"></div>
-        <div class="dot dot-5"></div>
-      </div>
+<!--     <div class="container">
+        <div class="loader">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+            <div class="dot dot-4"></div>
+            <div class="dot dot-5"></div>
+          </div>
+    </div> -->
     <header>
         <div class="container">
             <div class="header">
                 <img src="icons/logo.svg" alt="logo" class="header_logo">
-                <nav class="nav">
-                    <ul>
-                        <li><a href="#"  class="nav_link">HOME</a></li>
-                        <li><a href="#"  class="nav_link">PROJECT</a></li>
-                        <li><a href="#"  class="nav_link">SERVICES</a></li>
-                        <li><a href="#"  class="nav_link">ABOUT</a></li>
-                        <li><a href="#"  class="nav_link">BLOG</a></li>
-                        <li><a href="#"  class="nav_link">SHOP</a></li>
-                        <li><a href="#"  class="nav_link">CONTACT</a></li>
-                        <li><button class="nav_btn">Sign Up</button></li>
+                <nav class=" menu nav">
+                    <ul class="">
+                        <li><a href="#"  class="nav_link menu_item">HOME</a></li>
+                        <li><a href="#"  class="nav_link menu_item">PROJECT</a></li>
+                        <li><a href="#"  class="nav_link menu_item">SERVICES</a></li>
+                        <li><a href="#"  class="nav_link menu_item">ABOUT</a></li>
+                        <li><a href="#"  class="nav_link menu_item">BLOG</a></li>
+                        <li><a href="#"  class="nav_link menu_item">SHOP</a></li>
+                        <li><a href="#"  class="nav_link menu_item">CONTACT</a></li>
+                        <li><button class="nav_btn menu_item">Sign Up</button></li>
                     </ul>   
                 </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
@@ -172,7 +179,7 @@
         </div>
     </section>
     
-    <secrion class="news">
+    <section class="news">
         <div class="container">
             <div class="news__wrapper">
                 <h3 class="news__subtitle subtitle_fz20">LETEST NEWS</h3>
@@ -186,8 +193,8 @@
                         <h4 class="news-card__title subtitle_fz20">
                             2020 Interior Design Trends
                         </h4>
-                        <div class="news-card__descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            incididunt ut labore et dolore magna aliqua.</div>
+                        <p class="news-card__descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            incididunt ut labore et dolore magna aliqua.</p>
                         <button class="news-card__btn btn_green">CONTINUE READING....</button>
                     </div>
 
@@ -199,14 +206,30 @@
                         <h4 class="news-card__title subtitle_fz20">
                             28 Notable Product at ARC Interior Design
                         </h4>
-                        <div class="news-card__descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            incididunt ut labore et dolore magna aliqua.</div>
+                        <p class="news-card__descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            incididunt ut labore et dolore magna aliqua.</p>
                         <button class="news-card__btn btn_green">CONTINUE READING....</button>
                     </div>
                 </div>
             </div>
         </div>
-    </secrion>
+    </section>
+
+    <section class="sign-up">
+        <div class="container">
+            <div class="sign-up__wrapper">
+                <div class="sign-up__title title">DON’T FORGET TO SIGN UP</div>
+                <span class="grey-line"></span>
+                <p class="sign-up__descr text_fz18">Find out early about all upcoming promotions and new product releases with our newsletter.</p>
+                <form class="form" action="">
+                    <input class="form__input" placeholder="Enter your name....." type="text" name="" id="name">
+                    <input class="form__input" placeholder="Enter your surname....." type="text" name="" id="surname">
+                    <input class="form__input form__input_email" placeholder="Enter your e-mail....." type="email" name="" id="email">
+                </form>
+                <button class="form__btn btn_green">SUBSCRIBE</button>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -261,15 +284,18 @@
                                 </div>
                         </div>
                 </div>
+                <span class="grey-line_footer"></span>
+                <span id="rights" class="text_fz18">Copyright @ 2020 Brandoxide.all right reserved.</span>
             </div>
-            <hr/>
-            <span id="rights" class="text_fz18">Copyright @ 2020 Brandoxide.all right reserved.</span>
+
         </div>
 
     </footer>
+    <script src="js/hamburger.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/timer.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

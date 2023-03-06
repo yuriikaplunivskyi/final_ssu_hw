@@ -3,6 +3,7 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
+    margin: 50px auto;
     &_logo{
         display: flex;
         flex-flow: row wrap;
@@ -58,4 +59,7 @@
         border: none;
 
     }
+}
+.hamburger{
+    display: none;
 }

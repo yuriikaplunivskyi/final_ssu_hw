@@ -1,0 +1,143 @@
+@use "sass:math";
+@media (max-width: 1200px){
+    .container {
+        width: 90%;
+    }
+    .menu{
+        position: fixed;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* text-indent: rem(40); */
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 80vh;
+        padding: 20px 15px;
+        background-color: $white-color;
+        border-radius: 10px;
+        transition: .5s all;
+        border: 3px solid $grey-text-color;
+        & a{
+            font-size: rem(25);
+        }
+
+        &_active{
+            left: 0;
+        }
+        & ul{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+        }
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        & span {
+            display: block;
+            height: 4px;
+            width: 100%;
+            background-color: rgb(23, 23, 23);
+            margin-bottom: 6px;
+            transition: .5s all;
+        }
+        &_active{
+
+            & span{
+                margin-bottom: -3px;
+            
+                    &:first-child{
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:last-child{ 
+                        transform:translateY(3px) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    
+    .hero {
+        &__text {
+            width: 423.36px;
+        }
+        &__img {
+
+            max-width: 401.28px;
+            height: 613.23px;
+            position: relative;
+            border: 2px solid $brown-color;
+            border-radius: 140px 0px;
+            
+            &_item {
+                max-width: 401.28px;
+                height: 613.23px;
+                background: #C4C4C4;
+                border-radius: 140px 0px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border: 2px solid $green-main-color;
+                position: relative;
+                bottom: 30px;
+                right: 30px;
+                object-fit: cover;
+            }
+        }
+    }
+    .about-us{
+        &__text {
+            width: 400px;
+        }
+        &__img {
+            max-width: 450px;
+            height: 711px;
+            position: relative;
+            border: 2px solid #B0855B;
+            border-radius: 140px 0px;
+            object-fit: cover;
+            &_item {
+                max-width: 450px;
+                height: 711px;
+                background: $bg-grey-color;
+                border-radius: 140px 0px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border: 2px solid $green-main-color;
+                position: relative;
+                bottom: -30px;
+                right: -30px;
+                &_expire{
+                    max-width: 450px;
+                    height: 711px;
+                    background: $bg-grey-color;
+                    border-radius: 140px 0px;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border: 2px solid $green-main-color;
+                    position: relative;
+                    bottom: 30px;
+                    right: 30px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        max-width: 95%;
+        padding: 0 10px;
+    }
+}

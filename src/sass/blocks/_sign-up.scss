@@ -1,0 +1,66 @@
+.sign-up{
+    &__title{
+        font-size: rem(48);
+        line-height: rem(48);
+        letter-spacing: 0.08em;
+        margin-top: 100px;
+        text-align: center;
+    }
+    &__descr{
+        font-weight: 400;
+        font-size: rem(18);
+        line-height: rem(28);
+        text-align: center;
+        max-width: 647px;
+        margin: 20px auto;     
+    }
+}
+.grey-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border: 1px solid $bg-grey-color;
+    margin: 40px auto;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:50px;
+    width: 60%;
+    margin: 40px auto;
+    &__input{
+        background: #EEEEEE;
+        border: none;
+        border-radius: 20px 0px;
+        
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 50px;
+        border-radius: 0px 0px 20px 0px;
+        margin: 0 auto;
+    }
+}
+#name, #surname{
+    width: 40%;
+    height: 48px;
+}
+#email{
+    width: 88%;
+    height: 50px;
+}
+#email, #name, #surname::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 55px;
+    text-align:left;
+    text-indent: 20px;
+    color: #646464;
+}

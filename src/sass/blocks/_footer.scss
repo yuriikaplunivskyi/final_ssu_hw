@@ -1,14 +1,14 @@
 .footer{
     margin-top: rem(160);
     position: relative;
-
+    background: #F8F8F8;
     &__wrapper{
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         gap: rem(40);
-        background: #F8F8F8;
+        
     }
     &__item {
         display: flex;
@@ -88,13 +88,16 @@
     }
 
 }
-hr {
+.grey-line_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     border: 1px solid $bg-grey-color;
-    margin-top: rem(69);
+    margin: 0 auto;
 }
 #rights{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: rem(15);
 }
