@@ -188,7 +188,7 @@
                 <h3 class="news__subtitle subtitle_fz20">LETEST NEWS</h3>
                 <h2 class="news__title title">From Our Blog</h2>
                 <div class="news__cards">
-                    <div class="news-card">
+                    <div class="news-card news-card--show">
                         <div class="news-card__img">
                             <img src="img/news/mirror.png" alt="design" class="news-card__img_item"/>
                         </img>
@@ -198,10 +198,15 @@
                         </h4>
                         <p class="news-card__descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="news-card__info text_fz18">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
                         <button class="news-card__btn btn_green">CONTINUE READING....</button>
                     </div>
 
-                    <div class="news-card">
+                    <div class="news-card ">
                         <div class="news-card__img">
                             <img src="img/news/room.png" alt="design" class="news-card__img_item"/>
                         </img>
@@ -211,6 +216,11 @@
                         </h4>
                         <p class="news-card__descr text_fz18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="news-card__info text_fz18">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
                         <button class="news-card__btn btn_green">CONTINUE READING....</button>
                     </div>
                 </div>
@@ -224,12 +234,32 @@
                 <div class="sign-up__title title">DON’T FORGET TO SIGN UP</div>
                 <span class="grey-line"></span>
                 <p class="sign-up__descr text_fz18">Find out early about all upcoming promotions and new product releases with our newsletter.</p>
-                <form class="form" action="">
+<!--                 <form class="form" action="">
                     <input class="form__input" placeholder="Enter your name....." type="text" name="" id="name">
                     <input class="form__input" placeholder="Enter your surname....." type="text" name="" id="surname">
                     <input class="form__input form__input_email" placeholder="Enter your e-mail....." type="email" name="" id="email">
-                </form>
-                <button class="form__btn btn_green">SUBSCRIBE</button>
+                    <button type="submit" class="form__btn btn_green">SUBSCRIBE</button>
+                </form> -->
+                <form class="form" action="">
+                    <div class="form__group" id="name-group">
+                      <input class="form__input" placeholder="Enter your name....." type="text" name="" id="name">
+                      <div class="form__error" id="name-error"></div>
+                    </div>
+                    
+                    <div class="form__group" id="surname-group">
+                      <input class="form__input" placeholder="Enter your surname....." type="text" name="" id="surname" >
+                      <div class="form__error" id="surname-error"></div>
+                    </div>
+                    
+                    <div class="form__group" id="email-group">
+                      <input class="form__input form__input_email" placeholder="Enter your e-mail....."  name="" id="email">
+                      <div class="form__error" id="email-error"></div>
+                    </div>
+                    
+                    <button class="form__btn btn_green">SUBSCRIBE</button>
+                  </form>
+                  
+                
             </div>
         </div>
     </section>
@@ -288,7 +318,7 @@
                         </div>
                 </div>
                 <span class="grey-line_footer"></span>
-                <span id="rights" class="text_fz18">Copyright @ 2020 Brandoxide.all right reserved.</span>
+                <span id="rights" class="text_fz18"> @ ${currentYear}</span>
             </div>
 
         </div>
@@ -299,6 +329,7 @@
      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/timer.js"></script>
+    <script src="js/valid-form.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
