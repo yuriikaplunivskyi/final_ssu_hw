@@ -26,3 +26,16 @@ $(document).ready(function(){
 		  });
 		});
 
+window.addEventListener('scroll', function() {
+	let documentHeight = document.documentElement.scrollHeight;
+	let windowHeight = window.innerHeight;
+	let scrollTop = window.scrollY;
+	let progress = document.querySelector('.progress-bar');
+	let progressHeight = (scrollTop / (documentHeight - windowHeight)) * 100;
+	progress.style.width = progressHeight + '%';
+});
+
+setTimeout(function() {
+	document.querySelector('.loader').style.display = 'none';
+  }, 5000);
+  

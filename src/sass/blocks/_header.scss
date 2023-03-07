@@ -1,13 +1,21 @@
 .header{
+    position: fixed;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 50px auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: $white-color;
+    border-bottom: 1px solid $brown-color;
     &_logo{
         display: flex;
         flex-flow: row wrap;
         align-items: center;
+        margin: 20px;
         }
     &_btn{
         width: 95.24px;
@@ -22,6 +30,7 @@
     align-items: center;
     justify-content: space-between;
     gap: rem(15);
+    
     ul {
         display: flex;
         flex-flow: row wrap;
@@ -29,6 +38,7 @@
         justify-content: space-between;
         list-style: none;
         gap: rem(30);
+        margin: 20px;
     }
     &_link{
         display: flex;
@@ -41,9 +51,8 @@
         line-height: rem(22);
         color: $black-text-color ;
         text-decoration: none;
-        &:hover{
-            color: $grey-text-color;
-        }
+        transition: .3s;
+        filter:opacity(85%); 
     }
     &_btn {
         font-family: 'Open Sans';
@@ -60,6 +69,31 @@
 
     }
 }
+nav a:hover{
+    text-decoration: none;
+    color: $green-main-color;
+    border: 1px solid $brown-color;
+    padding: 3px;
+   /*   font-size: 2em; 
+    transition: all 0.5s ease-in ; */
+    transform: scale(1.2);
+    transform: 2s;
+}
+ul:hover > :not(:hover) {
+    opacity: .4;
+}
+
 .hamburger{
     display: none;
+}
+
+.progress-bar {
+    height: 5px;
+    width: 0;
+    background-color: $green-main-color;
+    position: fixed;
+    top: 86px;
+    left: 0;
+    z-index: 999;
+    transition: width 0.5s ease-in-out;
 }
