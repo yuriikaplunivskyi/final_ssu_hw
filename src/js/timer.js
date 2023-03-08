@@ -1,4 +1,4 @@
-// Створюємо модальне вікно
+
 const modal = document.createElement('div');
 modal.style.position = 'fixed';
 modal.style.top = '50%';
@@ -14,7 +14,6 @@ modal.style.justifyContent = 'center';
 modal.style.alignItems = 'center';
 document.body.appendChild(modal);
 
-// Додаємо текст до модального вікна
 const text = document.createElement('p');
 text.textContent = 'Ви ще тут?';
 text.style.color = 'black';
@@ -23,7 +22,6 @@ text.style.textAlign = 'center';
 text.style.margin = '40px auto';
 modal.appendChild(text);
 
-// Додаємо кнопки до модального вікна
 const buttons = document.createElement('div');
 buttons.style.display = 'flex';
 buttons.style.flexDirection = 'row';
@@ -48,21 +46,17 @@ closeButton.style.padding = '10px 20px';
 closeButton.style.border = '1px solid #37806B';
 buttons.appendChild(closeButton);
 
-// Додаємо обробник події для кнопок
+
 stayButton.addEventListener('click', () => {
-  // Якщо користувач підтверджує, що він ще тут, скидаємо таймер
   clearTimeout(timer);
-  // Приховуємо модальне вікно
   modal.style.display = 'none';
 });
 
 closeButton.addEventListener('click', () => {
-  // Інакше закриваємо сторінку
   window.close();
 });
 
-// Запускаємо таймер
+
 const timer = setTimeout(() => {
-  // Показуємо модальне вікно
   modal.style.display = 'block';
 }, 6000);

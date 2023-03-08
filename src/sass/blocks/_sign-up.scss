@@ -32,13 +32,6 @@
     gap:50px;
     width: 60%;
     margin: 40px auto;
-    
-    &__input{
-        background: #EEEEEE;
-        border: none;
-        border-radius: 20px 0px;
-    
-    }
     &__btn {
         display: flex;
         justify-content: center;
@@ -52,10 +45,16 @@
 #name, #surname{
     width: 100%;
     height: 100%;
+    background: #EEEEEE;
+    border: none;
+    border-radius: 20px 0px;
 }
 #email{
     width: 100%;
     height: 100%;
+    background: #EEEEEE;
+    border: none;
+    border-radius: 20px 0px;
 }
 #name-group, #surname-group{
     width: 41%;
